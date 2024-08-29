@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الأول</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>مرحبا بكم في موقعي الأول</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">عن الموقع</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>عن الموقع</h2>
+            <p>هذا موقع ويب بسيط تم إنشاؤه باستخدام HTML وCSS.</p>
+            <img src="example.jpg" alt="صورة توضيحية" width="300">
+        </section>
+        <section id="contact">
+            <h2>تواصل معنا</h2>
+            <p>للتواصل معنا، يرجى إرسال بريد إلكتروني إلى <a href="mailto:info@example.com">info@example.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>حقوق النشر &copy; 2024 موقعي الأول</p>
+    </footer>
+</body>
+</html>
+{
+  "id": 1534816,
+  "name": "master",
+  "target": "branch",
+  "source_type": "Repository",
+  "source": "yousef227/yousef227",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "exclude": [],
+      "include": [
+        "~DEFAULT_BRANCH"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    }
+  ],
+  "bypass_actors": [
+    {
+      "actor_id": 2,
+      "actor_type": "RepositoryRole",
+      "bypass_mode": "always"
+    },
+    {
+      "actor_id": 4,
+      "actor_type": "RepositoryRole",
+      "bypass_mode": "always"
+    },
+    {
+      "actor_id": 5,
+      "actor_type": "RepositoryRole",
+      "bypass_mode": "always"
+    },
+    {
+      "actor_id": 1,
+      "actor_type": "OrganizationAdmin",
+      "bypass_mode": "always"
+    },
+    {
+      "actor_id": null,
+      "actor_type": "DeployKey",
+      "bypass_mode": "always"
+    }
+  ]
+}
